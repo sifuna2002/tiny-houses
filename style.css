@@ -1,0 +1,278 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+    scroll-behavior: smooth;
+    text-decoration: none;
+}
+
+.navbar {
+    width: 85%;
+    margin: auto;
+    padding: 35px 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.logo {
+    width: 120px;
+    cursor: pointer;
+}
+
+.navbar ul li {
+    list-style: none;
+    display: inline-block;
+    margin: 0 20px;
+    position: relative;
+}
+
+.navbar ul li a {
+    text-decoration: none;
+    color: rgb(51, 136, 22);
+    text-transform: uppercase;
+}
+
+.navbar ul li::after {
+    content: "";
+    height: 3px;
+    width: 0;
+    background: rgb(3, 28, 59);
+    position: absolute;
+    left: 0;
+    bottom: -10px;
+    transition: 0.5s;
+}
+
+.navbar ul li:hover::after {
+    width: 100%;
+}
+
+.button {
+    padding: 8px 22px;
+    background: blue;
+    border-radius: 5rem;
+    color: white;
+    cursor: pointer;
+}
+
+.button:hover {
+    background: peru;
+    color: rgb(36, 23, 48);
+}
+
+img {
+    width: 100%;
+}
+
+section {
+    padding: 4.5rem 0 3rem;
+}
+
+.container {
+    max-width: 1068px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.home {
+    margin: top 5rem;
+    background: url(home.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    height: 440px;
+    border-radius: 1.5rem;
+    display: flex;
+    align-items: center;
+}
+
+.home-text {
+    padding-left: 35px;
+}
+
+.home-text h1,
+p {
+    font: size 2rem;
+    color: rgb(29, 2, 10);
+    margin-bottom: 1rem;
+    font-weight: bold;
+}
+
+.about {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(18rem, auto));
+    gap: 2rem;
+}
+
+.about-img img {
+    border-radius: 3rem 0 3rem;
+}
+
+.about-text span {
+    font-size: 1rem;
+    text-transform: uppercase;
+    font-weight: 500;
+    color: aliceblue;
+}
+
+.about-text h2 {
+    font-size: 1.7rem;
+}
+
+.about-text p {
+    font-size: 0.983rem;
+    margin: 1rem 0 1rem;
+}
+
+.sales {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(18rem, auto));
+    gap: 2.4rem;
+}
+
+.sales .box {
+    padding: 20px;
+    background: rgb(210, 219, 217);
+    box-shadow: rgb(153, 174, 175) 1px 1px;
+    text-align: center;
+    border-radius: 2rem;
+}
+
+.sales .box:hover {
+    background: rgb(81, 81, 165);
+    transition: 0.4s all linear;
+}
+
+.sales .box h3 {
+    font-size: 1.1rem;
+    margin: 1rem 0 0.4rem;
+}
+
+.sales .box p {
+    font-size: 0.938rem;
+}
+
+.heading {
+    text-align: center;
+}
+
+.heading span {
+    font-weight: 500;
+    color: #fff;
+}
+
+.heading h2 {
+    font: size 1.7rem;
+}
+
+.heading p {
+    font-size: 0.938rem;
+}
+
+.heading {
+    text-align: center;
+    margin-bottom: 2rem;
+}
+
+.heading span {
+    font-weight: 500;
+    color: black;
+}
+
+.heading h2 {
+    font-size: 1.7rem;
+}
+
+.heading p {
+    font-size: 0.938rem;
+}
+
+.properties {
+    background: rgb(209, 235, 229);
+    border-radius: 2rem;
+}
+
+.properties-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, auto));
+    gap: 3rem;
+    padding: 0 50px;
+}
+
+.properties-container .box {
+    background: rgb(194, 238, 228);
+    padding: 10px;
+    border-radius: 1rem;
+}
+
+.properties-container .box:hover {
+    transform: translate(-10px);
+    transition: 0.5s;
+}
+
+.properties-container .box img {
+    border-radius: 1rem;
+    height: 220px;
+    object-fit: cover;
+    object-position: center;
+}
+
+.properties-container .box h3 {
+    font-size: 1rem;
+    font-weight: 600;
+    float: right;
+    margin-top: 2rem;
+}
+
+.properties-container .box .content {
+    display: flex;
+    justify-content: space-between;
+}
+
+.properties-container .box .content .text h3 {
+    font-weight: 500;
+}
+
+.properties-container .box .content .text p {
+    font-size: 0.8rem;
+}
+
+.news {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    row-gap: 2rem;
+    text-align: center;
+    justify-content: center;
+    background: rgb(130, 189, 197);
+    border-radius: 2rem;
+    margin-top: 0.5rem;
+}
+
+.news h2 {
+    font-size: 1.7rem;
+}
+
+.news form {
+    background: rgb(130, 189, 197);
+    padding: 6px 10px;
+    border-radius: 5rem;
+}
+
+.news form input {
+    border: none;
+    outline: none;
+    font-size: 1rem;
+}
+
+.news #email-box {
+    width: 280px;
+    border-radius: 2rem;
+}
+
+.news .button {
+    padding: 12px 34px;
+    font-weight: 500;
+}
